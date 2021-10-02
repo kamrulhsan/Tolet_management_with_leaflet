@@ -1,0 +1,371 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color:#003147;
+    transition: 0,5s;
+    overflow: hidden;
+}
+.navigation.active{
+    width: 60px;
+    transition: 0,5s;
+
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li{
+    /* margin: 20px; */
+    position: relative;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+    
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 30px;
+    cursor: default;
+    font-weight: bold;
+    
+}
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+/* .navigation ul li:nth-child(2):hover{
+    background: transparent;
+} */
+.navigation ul li:hover{
+background-color: darkcyan;
+
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    /* text-align: center; */
+}
+.navigation ul li a img{
+    margin: 0%;
+    padding: 0%;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.navigation ul li .icon .fas{
+    color: wheat;
+    
+    font-size: 20px;
+}
+.navigation ul li .icon .fab{
+    color: wheat;
+    
+    font-size: 20px;
+}
+.navigation ul li .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    color: white;
+    width: 100%;
+    white-space: nowrap;
+    /* font-size: 20px; */
+}
+.navigation ul li .header{
+    font-size: 2rem;
+    cursor: default;
+
+}
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    /* padding: 20px; */
+    left:300px;
+    min-height: 100vh;
+    background: rgb(221, 220, 218);
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 60px);
+    left:60px;
+
+}
+.main .topbar{
+    width: 100%;
+    background: white;
+    height: 60px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    position: relative; 
+    width: 60px;
+    height: 60px;
+    /* background: coral; */
+    cursor: pointer;
+}
+.toggle::before{
+    content: "\f0c9";
+    font-family: fontAwesome;
+    position : absolute;
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+.search label{
+    position: relative;
+    width: 100%;
+}
+.search  input{
+    /* position: relative; */
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border : 1px solid rgb(172, 170, 170);
+    outline: none;
+    padding-left: 40px;
+}
+.search label .fas{
+    position: absolute;
+    left: 20px;
+    top: 3px;
+}
+.user{
+    position: relative;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.user img{
+    position: relative;
+    top: 0;
+    left: -3px;
+    right: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 20px;
+}
+.cardbox .card{
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+ 
+}
+.cardbox .card a{
+    text-decoration: none;  
+    color: black;
+
+}
+.cardbox .card .number{
+    font-size: 2rem;
+    
+}
+.cardbox .card .cardName{
+    color: darkgrey;
+    font-size: 1rem;
+    padding-top: 10px;
+
+}
+.cardbox .card .iconBox{
+    font-size: 24px;
+    color: rgb(13, 99, 228);
+    padding-top: 10px;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+}
+.sell_data{
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.sell_data tr td{
+    padding: 20px;
+}
+.sell_data tr th{
+    padding: 20px;
+
+}
+.rent_data{
+    padding: 20px;
+    width: 100%;
+   
+}
+.rent_data tr td{
+    padding: 20px;
+}
+.rent_data tr th{
+    padding: 20px;
+
+}
+
+
+.agents tr td input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    /* text-align: center; */
+    border-radius: 3px;
+    border: transparent;
+
+}
+#add_agent{
+    width: 60px;
+    height: 40px;
+    background-color: #0e7fd9;
+    outline: none;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#agent_photo{
+    height: 40px;
+
+}
+table {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  table tr th{
+      background-color: black;
+      color: white;
+  }
+.seller_data{
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.seller_data tr td{
+    padding: 20px;
+}
+.seller_data tr th{
+    padding: 20px;
+
+}
+.agent_data{
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.agents{
+    padding: 20px;
+}
+.agents tr td{
+    padding-right: 20px;
+
+    
+}
+.agent_data tr td{
+    padding: 20px;
+}
+.agent_data tr th{
+    padding: 20px;
+
+}
+.view{
+    background-color: rgb(13, 99, 228);
+
+}
+.update{
+    background-color: forestgreen;
+}
+.delete{
+    background-color:crimson;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

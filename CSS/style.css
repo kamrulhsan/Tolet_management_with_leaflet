@@ -1,0 +1,135 @@
+.navbar{
+    padding: 5px !important;
+    width: 100%;
+    font-family:  'Slabo 27px', serif;
+    height: 100px !important;
+}
+
+/* div.post_data{
+    border: 2px black solid;
+} */
+.post_data{
+    padding-bottom: 10px;
+    
+}
+.scroll{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.home img{
+    width: 100%;
+}
+/* .brnd img{
+    width: 50%;
+} */
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+.card-title{
+    font-weight: bold;
+    font-family: 'Spectral', serif;
+}
+.navbar-brand img{
+    padding-top: 0%;
+    margin-top: 0%;
+    width: 160px;
+    height: 150px;
+}
+.sell_heading{
+    padding: 2rem 2rem ;
+}
+
+.row h5{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+.text{
+    margin:30px;
+}
+.img-left {
+    flex-direction: row !important;
+  }
+  .img-left img {
+    width: 60% !important;
+  }
+  .row{
+      padding-bottom:20px ;
+  }
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    /* width: 1200px; */
+    text-align: center;
+}
+.sell-title{
+    padding-top: 70px;
+}
+.footer-img img{
+    padding-bottom: 20px;
+    width: 100% !important;
+
+}
+.card:hover{
+    transform: scale(1.05);
+   
+    transition: 1s;
+    
+}
+
+.card:hover .btn{
+    background-color: #1075f8;
+    color: white;
+    
+}
+
+.card .btn{
+    background-color: white;
+    color: #1075f8;
+}
+.carousel .carousel-item {
+    height: 450px;
+  }
+.carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 450px;
+  }
+.search-btn{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #464545;
+    font-size: 1.1em;
+    position: relative;
+    margin-right: 10px;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #464545;
+    
+  }
+  .navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #464545;
+    color: transparent;
+    width: 0%;
+    content: '.';
+    height: 3px;
+  }
+  .navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    transition: 1s;
+  }
