@@ -18,9 +18,9 @@ if ($result) {
     <form action="agent_add.php" method="post" enctype="multipart/form-data">
         <table>
             <tr>
-                <td><input type="text" name="agent_first_name" id="agent_first_name" placeholder="First name"></td>
-                <td><input type="text" name="agent_last_name" id="agent_last_name" placeholder="Last name"></td>
-                <td><input type="text" name="agent_mobile_no" id="agent_mobile_no" placeholder="Mobile Number"></td>
+                <td><input type="text" name="agent_first_name1" id="agent_first_name1" placeholder="First name"></td>
+                <td><input type="text" name="agent_last_name1" id="agent_last_name1" placeholder="Last name"></td>
+                <td><input type="text" name="agent_mobile_no1" id="agent_mobile_no1" placeholder="Mobile Number"></td>
                 <td><input type="file" name="agent_photo" id="agent_photo" accept="image/jpg, image/png, image/jpeg"></td>
                 <td><input type="submit" value="Add" name="add_agent" id="add_agent"></td>
             </tr>
@@ -60,9 +60,12 @@ if ($result) {
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <div class="data">
-        
-    </div>
+    
+        <form action="" method="post">
+        <div class="data">
+        </div>
+        </form>
+    
   </div>
 
 </div>

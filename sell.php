@@ -21,7 +21,7 @@ include "PHP/menu.php"
             <div class="card-body">
                 <h5 class="card-title">Work with an agent</h5>
                 <p class="card-text">TOLET Premier Agents are among the best in the business. Learn how to pick the right one for you..</p>
-                <a href="#" class="btn btn-primary">See List</a>
+                <a href="agent_list.php" class="btn btn-primary">See List</a>
             </div>
         </div>
     </div>

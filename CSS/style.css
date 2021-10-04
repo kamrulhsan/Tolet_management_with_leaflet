@@ -133,3 +133,16 @@ p{
     width: 100%;
     transition: 1s;
   }
+  .agent_list{
+      width: 100%;
+  }
+  .agent_list tr th{
+      padding: 10px;
+  }
+.agent_list img{
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit:cover;
+    top: 10px;
+}

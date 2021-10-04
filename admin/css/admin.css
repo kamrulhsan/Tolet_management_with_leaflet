@@ -168,8 +168,9 @@ background-color: darkcyan;
     min-width: 50px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
+    top: -6px;
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
     cursor: pointer;
 }
 .user img{
@@ -178,7 +179,8 @@ background-color: darkcyan;
     left: -3px;
     right: 100px;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    border-radius: 50%;
     object-fit: cover;
 }
 .cardbox{
@@ -283,6 +285,7 @@ table {
     margin-right: auto;
     width: 100%;
   }
+
   table tr th{
       background-color: black;
       color: white;
@@ -349,10 +352,10 @@ table {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
@@ -369,3 +372,38 @@ table {
     text-decoration: none;
     cursor: pointer;
   }
+  /* .sellpost_images{
+      /* display: flex; */
+  /* } */
+  /* .sellpost_images img{
+      width: 100%; */
+  /* } */
+  /* img {
+    text-indent: -10000px
+} */
+.sellpost_data tr td {
+    font-size: 15px;
+}
+.sellpost_data tr td input{
+    line-height: 30px;
+}
+/* .user {
+    position: relative;
+    display: inline-block !important;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .desc {
+      position: relative;
+      right: inherit;
+    padding: 15px;
+    text-align: center;
+  }
+  .user:hover .dropdown-content {
+    display: block;
+  } */

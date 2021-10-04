@@ -34,12 +34,23 @@ if ($result) {
             <td><?php echo $data['flat_name']?></td>
             <td><img src="../images/<?php echo $data['image_name']?>" alt="Paitasina" style="width:100%"></td>
             <td><?php echo $data['price']?></td>
-            <td><input class="btn view" type="button" value="View"></td>
-            <td><input class="btn update" type="button" value="Update"></td>
-            <td><input class="btn delete" type="button" value="Delete"></td>
+            <td><input class="btn view" type="button" value="View" onclick="modal_view()" id="sellpost_view" data-id="<?php echo $data['ID'] ?>"></td>
+            <td><input class="btn update" type="button" value="Update" onclick="modal_view()" id="sellpost_update" data-id="<?php echo $data['ID'] ?>"></td>
+            <td><input class="btn delete" type="button" value="Delete" id="sellpost_delete" data-id="<?php echo $data['ID'] ?>" ></td>
         </tr>
         <?php endforeach;
        ?>
     </table>
     </div>
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="data">
+        
+    </div>
+  </div>
+
+</div>
     <?php  include "php/footer.php";?>

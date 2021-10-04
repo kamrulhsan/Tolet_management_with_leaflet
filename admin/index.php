@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include "db.php";
 error_reporting(E_ERROR | E_PARSE);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -13,10 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     foreach($fetch as $data):
         if($data['username'] == $username && $data['pass'] == $pass)
         {
-            $error_msg= "login Succsesfull";
+            $_SESSION['username']= $username;
+            header("location:dashboard.php");
         }
         else{
-            $error_msg = "cant login";
+            $error_msg = "Invalid Username or Password";
         }
     endforeach;
 }
@@ -107,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </table>
 
 
-            <?php echo $error_msg;?>
+            <span style="color: red;"><?php echo $error_msg;?></span>
 
         </form>
     </div>

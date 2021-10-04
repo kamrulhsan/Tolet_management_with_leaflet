@@ -122,8 +122,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
                         </div>
 
 
-                        <div class="form-row-last">
-                            <input type="submit" name="post" class="post" value="save">
+                        <div class="text-center" style="margin-top: 10px; ">
+                            <input class="btn btn-primary"type="submit" name="post" class="post" value="save" style="width:200px;">
                         </div>
                         <!-- <input type="submit" value="Post" class="btn btn-block btn-primary" name="post"> -->
                     </form>
